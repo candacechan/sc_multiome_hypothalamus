@@ -1,3 +1,6 @@
+### Code used for analysis of multiome (RNA+ATAC) for mouse dataset
+### C. Chan
+
 library(Seurat)
 library(Signac)
 library(EnsDb.Mmusculus.v79)
