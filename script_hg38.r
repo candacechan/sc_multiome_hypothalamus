@@ -1,3 +1,6 @@
+### Code used for analysis of multiome (RNA+ATAC) for human dataset
+### C. Chan
+
 library(Seurat)
 library(Signac)
 library(EnsDb.Hsapiens.v86)
