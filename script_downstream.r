@@ -1,3 +1,6 @@
+### Code used for downstream analysis of integrated data from multiome (RNA+ATAC) 
+### C. Chan
+
 library(Seurat)
 library(Signac)
 library(EnsDb.Hsapiens.v86)
@@ -10,7 +13,7 @@ library(patchwork)
 
 ### LinkPeaks
 DefaultAssay(seurat) <- "ATAC"
-seurat <- RegionStats(seurat, genome = BSgenome.Mmusculus.UCSC.mm10)
+seurat <- RegionStats(seurat, genome = BSgenome.Mmusculus.UCSC.mm10) 
 seurat <- LinkPeaks(
 	object = seurat,
 	peak.assay = "ATAC",
