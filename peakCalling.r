@@ -8,7 +8,8 @@ group_column <- "celltype"
 macs2_path   <- "/path/to/macs2"
 out_dir      <- "MACS2_output"
 genome       <- seqinfo(BSgenome.Mmusculus.UCSC.mm10)
-
+annotation_rds <- "path/to/annotation.rds"
+annotation <- readRDS(annotation_rds)
 dir.create(out_dir, showWarnings = FALSE)
 
 seurat <- readRDS(in_rds)
